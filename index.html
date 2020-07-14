@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.17sucai.com/preview/776298/2019-10-27/cat/index.html -->
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>小黑的家</title> 
+  <link rel="stylesheet" href="./style.css" /> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="cat"> 
+    <div class="face">
+     <div class="ear-left"> 
+      <div class="inner-l"></div> 
+     </div> 
+     <div class="ear-right"> 
+      <div class="inner-r"></div> 
+     </div> 
+     <div class="eye-left"> 
+      <div class="eye-ball"> 
+       <div class="eye-light"></div> 
+       <div class="shadow-light"></div> 
+      </div> 
+     </div> 
+     <div class="eye-right"> 
+      <div class="eye-ball"> 
+       <div class="eye-light"></div> 
+       <div class="shadow-light"></div> 
+      </div> 
+     </div> 
+     <div class="nose"> 
+      <div class="l1"></div> 
+      <div class="l2"></div> 
+     </div> 
+    </div> 
+    <div class="cat-body"> 
+     <div class="paw1"></div> 
+     <div class="paw2"></div> 
+     <div class="tail"></div> 
+    </div> 
+   </div> 
+   <div class="heart"> 
+    <div class="heart-l"></div> 
+    <div class="heart-r"></div> 
+   </div> 
+  </div> 
+  <iframe frameborder="0" border="1" marginwidth="0" marginheight="0" width="0" height="0" src="https://music.163.com/outchain/player?type=2&amp;id=464916877&amp;auto=1&amp;height=60"> </iframe> 
+  <span id="txt">小黑_</span>  
+  <script defer="">
+
+var text = "一只天真、勇敢、可爱而强大的小黑猫。" //预定文字
+var delay = 200 //文字出现的时间间隔
+var i = 0 //初始化变量 i
+function scrollit() {
+
+    //设置 id 为 demo 的对象内的文字为从变量 text 的 0 开始到 i 间的文字加"_"
+    txt.innerText = text.slice(0, i++) + "_"
+
+    if (i > text.length) { //当 i 大于 text 的文本长度时
+        i = 0 //重设 i 为 0，使文字重新从第一个文字出现
+        //延时执行scrollit()函数,delay*10是为了让显示完整文字的时间长一点
+        setTimeout("scrollit()", delay * 10)
+
+    }
+
+    //否则在delay毫秒后再次执行scrollit()函数
+    else setTimeout("scrollit()", delay)
+
+}
+
+scrollit() //调用scrollit()函数
+</script> 
+ </body>
+</html>
